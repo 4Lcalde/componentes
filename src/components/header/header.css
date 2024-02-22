@@ -1,0 +1,232 @@
+header {
+  width: 100%;
+  height: 12svh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--rtc-padding-l);
+  background-color: var(--rtc-color6);
+  gap: var(--rtc-gap-s);
+  box-shadow: 0px 7px 23px 0px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* LOGO */
+
+.logo {
+  width: 40px;
+  margin-right: 30px;
+}
+
+/* TOGGLE */
+#toggle {
+  display: none;
+}
+
+.toggleButton {
+  display: none;
+}
+
+/* BOTONES IZQUIERDA  */
+
+.login-container {
+  display: flex;
+}
+
+.buttonsUl {
+  width: 100%;
+  display: flex;
+  gap: var(--rtc-gap-m);
+  justify-content: end;
+}
+
+.principal {
+  padding: var(--rtc-padding-buttons);
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--rtc-color4);
+  cursor: pointer;
+}
+
+.principal:hover {
+  background-color: var(--rtc-color4);
+}
+
+.principal:hover a {
+  color: var(--rtc-color8);
+  font-weight: 400;
+}
+
+.principal a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--rtc-color9);
+}
+
+/* BUSCADOR  */
+.div-buscador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#form-busqueda {
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 0.25px solid var(--rtc-color1);
+}
+
+#caja-busqueda {
+  width: 70%;
+  padding: 10px;
+  border: 0;
+  padding: 0px 30px;
+  outline: none;
+  background-color: var(--rtc-color8);
+}
+
+#form-busqueda > button {
+  display: flex;
+  justify-content: center;
+  max-width: 40px;
+  font-weight: 600;
+  border: 0;
+  background-color: var(--rtc-color1);
+  color: var(--rtc-color5);
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#form-busqueda > button:hover {
+  color: var(--rtc-color8);
+  font-weight: 400;
+  background-color: var(--rtc-color4);
+}
+
+/* BOTONES DERECHA */
+.div-buttons {
+  display: flex;
+  flex-wrap: none;
+  margin-left: 30px;
+}
+
+.div-buttons > ul {
+  justify-content: end;
+  display: flex;
+  width: 100%;
+  flex-wrap: none;
+  gap: 25px;
+}
+
+.icon {
+  background-color: transparent;
+  border: none;
+}
+.navButtons {
+  width: 15px;
+  background: none;
+  border: 2px transparent;
+  cursor: pointer;
+}
+
+.lupa {
+  height: 15px;
+  background: none;
+  border: 2px transparent;
+  cursor: pointer;
+}
+
+/* TABLET */
+
+@media (max-width: 783px) {
+  .logo {
+    margin-right: 0px;
+  }
+
+  .buttonsUl {
+    justify-content: center;
+    width: 25%;
+    height: 14svh;
+    position: fixed;
+    top: 13svh;
+    right: -1000px;
+    padding: var(--rtc-padding-s);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--rtc-color6);
+    box-shadow: 0px 27px 25px 15px rgba(0, 0, 0, 0.09);
+  }
+
+  .principal {
+    border: none;
+  }
+
+  #toggle {
+    display: flex;
+    height: 15px;
+  }
+  .div-buttons {
+    width: 25%;
+    background-color: red;
+    position: fixed;
+    right: -1000px;
+    top: 27svh;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: var(--rtc-padding-s);
+  }
+
+  .div-buttons > .buttonsUl {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 1px solid var(--rtc-color4);
+  }
+
+  .toggleButton {
+    display: flex;
+    justify-content: center;
+    max-width: 40px;
+    padding: var(--rtc-padding-buttons);
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--rtc-color4);
+    cursor: pointer;
+  }
+  .cerrado {
+    right: 10px;
+  }
+}
+
+/* MOVIL */
+@media (max-width: 565px) {
+  #form-busqueda {
+    width: 50%;
+    max-width: 600px;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 0.25px solid var(--rtc-color1);
+  }
+}

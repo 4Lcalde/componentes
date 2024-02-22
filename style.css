@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Lato;
+}
+
+:root {
+  /* BACKGROUNDS */
+  --rtc-color1: #eaf1ef;
+  --rtc-color2: #9f9eaf;
+  --rtc-color3: #8077ff;
+  --rtc-color4: #00c7b6;
+  --rtc-color5: #006556;
+  --rtc-color6: #ffffff;
+  --rtc-color7: #f92945;
+  --rtc-color8: #ffffffe9;
+  --rtc-color9: #000000;
+
+  /* COLOR DE TEXTO */
+
+  --rtc-positive: #121d26;
+  --rtc-negative: #eef5ff;
+
+  /* padding */
+  --rtc-padding-s: 10px;
+  --rtc-padding-m: 15px;
+  --rtc-padding-l: 30px;
+  --rtc-padding-buttons: 12px 20px;
+
+  /* MARGIN */
+  --rtc-margin-s: 10px;
+  --rtc-margin-m: 15px;
+  --rtc-margin-l: 20px;
+
+  /* GAP */
+  --rtc-gap-s: 10px;
+  --rtc-gap-m: 15px;
+  --rtc-gap-l: 20px;
+
+  /* PESO */
+
+  --rtc-peso-regular: 200;
+  --rtc-peso-bold: 500;
+}
+
+body {
+  display: block;
+}
