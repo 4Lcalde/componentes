@@ -96,3 +96,9 @@ toggleButton.addEventListener('click', () => {
   buttonsUl.classList.toggle('cerrado')
   divbuttons.classList.toggle('cerrado')
 })
+
+const logoImg = document.querySelector('.logo')
+
+logoImg.addEventListener('click', () => {
+  location.reload()
+})

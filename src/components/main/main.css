@@ -1,4 +1,5 @@
 main {
+  width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -31,10 +32,17 @@ h1 {
   object-fit: cover;
   border-radius: 5px;
 }
+
+.buttons-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--rtc-gap-l);
+  padding: var(--rtc-padding-l);
+}
 #mostrar-mas {
   text-wrap: none;
   padding: var(--rtc-padding-buttons);
-  margin: auto;
   width: 125px;
   background-color: var(--rtc-color1);
   border-radius: 100px;
@@ -43,13 +51,48 @@ h1 {
 }
 
 #mostrar-mas:hover {
+  padding: var(--rtc-padding-buttons);
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--rtc-color4);
+  cursor: pointer;
+  color: var(--rtc-color9);
+}
+
+#limpiar {
+  text-wrap: none;
+
+  padding: var(--rtc-padding-buttons);
+
+  width: 125px;
   color: var(--rtc-color8);
   font-weight: 400;
   background-color: var(--rtc-color4);
+  border-radius: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#limpiar:hover {
+  padding: var(--rtc-padding-buttons);
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--rtc-color4);
+  cursor: pointer;
+  color: var(--rtc-color9);
 }
 
 .apagado {
   display: none;
+}
+
+.Error {
+  position: absolute;
+  text-wrap: nowrap;
+  color: var(--rtc-color4);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .resultado-busqueda > a:nth-child(1) {
